@@ -10,7 +10,7 @@ You can easily access services such as cleaning, renovation, transportation with
 # Business Problem
 ###########################
 
-By using the data set containing the service users and the services and categories these users have received.
+By using the dataset containing the service users and the services and categories these users have received,
 It is desired to create a product recommendation system with Association Rule Learning.
 
 ###########################
