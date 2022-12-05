@@ -41,7 +41,7 @@ df["CreateDate"] = pd.to_datetime(df["CreateDate"]).dt.normalize()
 
 # Creating NEW Variables
 
-df["Service"] = df["ServiceId"].astype(str) + '_' + df["CategoryId"].astype(str)
+df["Service"] = [str(row[1]) + '_' + str(row[2]) for row in df.values]
 df["Basket"] = df["UserId"].astype(str) + '_' + df["CreateDate"].astype(str).str[:7]
 
 df.head()
